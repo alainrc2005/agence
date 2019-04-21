@@ -56,9 +56,14 @@ La solución será hospedada próximamente para que realicen las pruebas de perf
 - php artisan migrate (creación de las vistas sql)
 
 ## Capturas de Pantalla
-![Captura-1](https://live.staticflickr.com/65535/47660933181_6dc9b1f1a2_o.png)
-![Captura-2](https://live.staticflickr.com/65535/40694396913_a08dfac1aa_o.png)
-![Captura-3](https://live.staticflickr.com/65535/47660932901_32705eb97c_o.png)
-![Captura-4](https://live.staticflickr.com/65535/40694396463_3561be6ee9_o.png)
-![Captura-5](https://live.staticflickr.com/65535/47660932601_d5fde550fb_o.png)
+![Captura-1](https://live.staticflickr.com/65535/47660933181_6dc9b1f1a2_o.png)  
+
+![Captura-2](https://live.staticflickr.com/65535/40694396913_a08dfac1aa_o.png)  
+
+![Captura-3](https://live.staticflickr.com/65535/47660932901_32705eb97c_o.png)  
+
+![Captura-4](https://live.staticflickr.com/65535/40694396463_3561be6ee9_o.png)  
+
+![Captura-5](https://live.staticflickr.com/65535/47660932601_d5fde550fb_o.png)  
+
 ![Captura-6](https://live.staticflickr.com/65535/40694395973_b93155542c_o.png)
