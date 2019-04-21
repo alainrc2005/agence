@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dff09011-828e-4fa6-8bb5-bc1be1e5da8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="396" selection-start-line="396" selection-end-line="396" />
+            <state relative-caret-position="284">
+              <caret line="395" selection-start-line="395" selection-end-line="395" />
             </state>
           </provider>
         </entry>
@@ -352,7 +351,7 @@
       <updated>1555267263364</updated>
       <workItem from="1555267264804" duration="22450000" />
       <workItem from="1555702985952" duration="46926000" />
-      <workItem from="1555871134391" duration="6451000" />
+      <workItem from="1555871134391" duration="7303000" />
     </task>
     <task id="LOCAL-00001" summary="Actualización documentación y paquetes npm requeridos">
       <created>1555872992060</created>
@@ -375,11 +374,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555878292660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Personalización del header de v-data-table, resuelto bugs de vuetify">
+      <created>1555881517616</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555881517616</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75827000" />
+    <option name="totallyTimeSpent" value="76679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -414,7 +420,8 @@
     <MESSAGE value="Actualización documentación y paquetes npm requeridos" />
     <MESSAGE value="Actualización de la documentación" />
     <MESSAGE value="Actualización de gráfico." />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualización de gráfico." />
+    <MESSAGE value="Personalización del header de v-data-table, resuelto bugs de vuetify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Personalización del header de v-data-table, resuelto bugs de vuetify" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -616,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="396" selection-start-line="396" selection-end-line="396" />
+        <state relative-caret-position="284">
+          <caret line="395" selection-start-line="395" selection-end-line="395" />
         </state>
       </provider>
     </entry>

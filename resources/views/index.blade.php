@@ -79,8 +79,6 @@
                                       :items-per-page="itemsPerPage"
                                       hide-default-footer
                                       @page-count="pageCount = $event"
-                                      :sort-by.sync="sortBy"
-                                      :sort-desc.sync="descending"
                                       hide-default-header
                                       class="elevation-1">
                             <template v-slot:header="{ props: { headers } }">
@@ -211,8 +209,6 @@
                 ],
                 doctors: {!! json_encode($doctors) !!},
 
-                sortBy: ['no_usuario'],
-                descending: [false],
                 page: 1,
                 pageCount: 0,
                 itemsPerPage: 5,
@@ -291,18 +287,6 @@
                 }
             },
             methods: {
-                toggleAll() {
-                    if (this.selected.length) this.selected = [];
-                    else this.selected = this.doctors.slice();
-                },
-                changeSort(column) {
-                    if (this.pagination.sortBy === column) {
-                        this.pagination.descending = !this.pagination.descending;
-                    } else {
-                        this.pagination.sortBy = column;
-                        this.pagination.descending = false;
-                    }
-                },
                 getRelatorio() {
                     axios.post("{{ route('btn.relatorio') }}", {
                         startdate: this.startdate,
@@ -367,7 +351,7 @@
                     }).then(
                         (r) => {
                             this.vrelatorio = this.vgrafico = this.vpizza = false;
-                            this.graficoOptions.series = r.data;//r.data.map((e)=>{ return [e.name,parseFloat(e.y)]});
+                            this.graficoOptions.series = r.data;
                             if (r.data.length === 0) return this.sbInfo("No existen datos");
                             this.vgrafico = true;
                         }
@@ -378,9 +362,6 @@
                         this.sbError("Ha ocurrido un error con el servidor");
                         console.log(e);
                     });
-                },
-                toggleAll() {
-                    console.log("aaaaa");
                 }
             },
             filters: {
