@@ -81,7 +81,20 @@
                                       @page-count="pageCount = $event"
                                       :sort-by.sync="sortBy"
                                       :sort-desc.sync="descending"
+                                      hide-default-header
                                       class="elevation-1">
+                            <template v-slot:header="{ props: { headers } }">
+                                <thead class="v-data-table-header">
+                                <tr>
+                                    <th>
+                                        <v-simple-checkbox v-model="checkall"
+                                                           :indeterminate="indeterminate"></v-simple-checkbox>
+                                    </th>
+                                    <th class="text-xs-left">Nombre</th>
+                                    <th class="text-xs-left">Nacimiento</th>
+                                </tr>
+                                </thead>
+                            </template>
                         </v-data-table>
                         <div class="text-xs-center pt-2">
                             <v-pagination v-model="page" :length="pageCount"></v-pagination>
@@ -263,6 +276,8 @@
                 vrelatorio: false,
                 vgrafico: false,
                 vpizza: false,
+                checkall: false,
+                indeterminate: false
             },
             computed: {
                 displayStart() {
@@ -363,6 +378,9 @@
                         this.sbError("Ha ocurrido un error con el servidor");
                         console.log(e);
                     });
+                },
+                toggleAll() {
+                    console.log("aaaaa");
                 }
             },
             filters: {
@@ -373,10 +391,15 @@
                     return moment(d, "YYYY-MM").format("MMMM [de] YYYY");
                 }
             },
-            mounted() {
-                this.$on("toggle-select-all", (r) => {
-                    console.log(arguments);
-                });
+            watch: {
+                'checkall': function (nv) {
+                    if (this.selected.length && !nv) {
+                        this.selected = [];
+                    } else this.selected = this.doctors.slice();
+                },
+                'selected': function () {
+                    this.indeterminate = this.selected.length !== 0 && this.selected.length !== this.doctors.length;
+                }
             }
         });
     </script>
