@@ -24,12 +24,10 @@
     },
     "dependencies": {
         "@mdi/font": "^3.5.95",
-        "bootstrap-material-design": "^4.1.1",
         "highcharts": "^7.1.1",
         "highcharts-vue": "^1.2.0",
         "material-design-icons-iconfont": "^4.0.5",
         "moment": "^2.24.0",
-        "vee-validate": "^2.2.2",
         "vue-numeral-filter": "^1.1.1",
         "vuetify": "^2.0.0-alpha.16"
     }
