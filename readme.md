@@ -38,7 +38,7 @@ Se utilizó laravel-mix para la compresión y optimización de los archivos Java
 
 ## Bugs
 
-Fueron detectados dos bugs en el componente v-data-table del Framework Vuetify en el checkbox de seleccionar todos los registros y el ordenamiento, los mismo ya habían sido notificados.
+Fueron detectados dos bugs en el componente v-data-table del Framework Vuetify en el checkbox de seleccionar todos los registros y el ordenamiento, los mismo ya habían sido notificados. (La funcionalidad de marcar todos los doctores no funciona correctamente)
 
 ## Seguridad
 

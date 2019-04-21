@@ -69,7 +69,7 @@ class AgenceController extends Controller {
             $result[$idx]['data'][$month - 1] += $g->recliq;
         }
         $promedio = DB::selectOne("select round(IFNULL(AVG(brut_salario),0),2) avg from cao_salario where co_usuario in ($users)");
-        $result[+$idx] = ['type' => 'spline', 'name' => 'Custo Fixo Médio', 'data' => array_fill(0, 12, $promedio->avg * 1.0)];
+        $result[++$idx] = ['type' => 'spline', 'name' => 'Custo Fixo Médio', 'data' => array_fill(0, 12, $promedio->avg * 1.0)];
         return $result;
     }
 }
