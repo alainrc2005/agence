@@ -13,7 +13,7 @@ La prueba fue desarrollada bajo los requerimientos solicitados utilizando para e
 
 Fueron también utilizados los siguientes componentes Vue.
 - [highcharts-vue v5.8.11](https://github.com/highcharts/highcharts-vue#readme)
-- [vue-numeral-filter](https://github.com/lloydjatkinson/vue-numeral-filter#readme)
+- [vue-numeral-filter v1.1.1](https://github.com/lloydjatkinson/vue-numeral-filter#readme)
 
 ## Explicación en Laravel
 Se utilizó un controlador app\Http\Controllers\AgenceController, se agregó un archivo de configuración config\agence.php para el versionado de la aplicación Javascript y CSS (JC_VERSION), una vista resources\views\index.blade.php y una platilla (layout) resources\views\layouts\master.blade.php
