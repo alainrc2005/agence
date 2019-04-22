@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\DB;
 
 class AgenceController extends Controller {
     public function index() {
-        $doctors = DB::select('select u.co_usuario,no_usuario,dt_nascimento from cao_usuario u, permissao_sistema p where u.co_usuario=p.co_usuario and p.co_sistema=1 and p.in_ativo="S" and p.co_tipo_usuario in (0,1,2)');
+        $doctors = DB::select('select u.co_usuario,no_usuario,dt_nascimento from cao_usuario u, permissao_sistema p where u.co_usuario=p.co_usuario and p.co_sistema=1 and p.in_ativo="S" and p.co_tipo_usuario in (0,1,2) order by no_usuario');
         return view('index', compact(['doctors']));
     }
 

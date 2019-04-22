@@ -68,7 +68,7 @@
                 <br/>
                 <v-layout row wrap>
                     <v-flex xs12 sm6 md6>
-                        <v-data-table ref="tt"
+                        <v-data-table
                                       dense
                                       v-model.sync="selected"
                                       :headers="headers"
@@ -79,10 +79,11 @@
                                       :items-per-page="itemsPerPage"
                                       hide-default-footer
                                       @page-count="pageCount = $event"
+                                      disable-sort
                                       hide-default-header
                                       class="elevation-1">
                             <template v-slot:header="{ props: { headers } }">
-                                <thead class="v-data-table-header">
+                                <thead class="v-data-table-header hidden-xs-only">
                                 <tr>
                                     <th>
                                         <v-simple-checkbox v-model="checkall"

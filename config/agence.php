@@ -1,2 +1,2 @@
 <?php
-define('JC_VERSION', '?v=1.0');
+define('JC_VERSION', '?v=2.0');
