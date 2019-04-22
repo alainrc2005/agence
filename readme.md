@@ -38,15 +38,15 @@ Se utilizó laravel-mix para la compresión y optimización de los archivos Java
 
 ## Bugs
 
-Fueron detectados dos bugs en el componente v-data-table del Framework Vuetify en el checkbox de seleccionar todos los registros y el ordenamiento, los mismo ya habían sido notificados. (La funcionalidad de marcar todos los doctores no funciona correctamente)
+Fueron detectados dos bugs en el componente v-data-table del Framework Vuetify en el checkbox de seleccionar todos los registros y el ordenamiento, los mismo ya habían sido notificados.
 
 ## Seguridad
 
 No fue utilizado el token de seguridad CSRF por no ser requerido en esta prueba.
 
-## Hospedaje
+## Alojamiento de la solución
 
-La solución será hospedada próximamente para que realicen las pruebas de performance y funcionalidad de la prueba.
+La solución será hospedada en https://agence.charpito.com para que realicen las pruebas de performance y funcionalidad de la prueba.
 
 ## Pasos para un Despliegue local
 
